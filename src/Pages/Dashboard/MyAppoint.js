@@ -10,7 +10,7 @@ const MyAppoint = () => {
     const navigate = useNavigate();
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?patient=${user.email}`, {
+            fetch(`https://dry-bastion-96276.herokuapp.com/booking?patient=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('Access Token')}`
