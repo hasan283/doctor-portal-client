@@ -5,7 +5,7 @@ const DeleteConModal = ({ deleteDoctor, refetch, setDeleteDoctor }) => {
     const { name, email } = deleteDoctor;
 
     const handleDelete = email => {
-        fetch(`http://localhost:5000/doctor/${email}`, {
+        fetch(`https://dry-bastion-96276.herokuapp.com/doctor/${email}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',
