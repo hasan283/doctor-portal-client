@@ -22,7 +22,7 @@ const BookingModal = ({ booking, date, setBooking, refetch }) => {
             phoneNumber: event.target.number.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://dry-bastion-96276.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
